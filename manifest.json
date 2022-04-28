@@ -1,0 +1,19 @@
+{
+  "name": "图片批量下载",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "图片批量下载",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "content_security_policy": {
+    "wasm-unsafe-eval": "none"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "./background.js"
+  }
+}
